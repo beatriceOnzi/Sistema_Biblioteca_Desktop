@@ -1,9 +1,1 @@
-- modularizar:
-    Turma:
-    - stup autocomplete -> vai para outro arquivo
-    - salvar dados
 
-    Cadastro:
-    - separar um para CRUD de alunos e livros
-
-- separar os arquivos cadastro e turma em pastas?
