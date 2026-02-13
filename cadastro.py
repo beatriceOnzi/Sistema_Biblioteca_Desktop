@@ -217,7 +217,7 @@ class CadastroWindow:
             for i in self.alunos_tree.get_children():
                 self.alunos_tree.item(i, tags=())
 
-            # aplica destaque bonito
+            # aplica destaque
             self.alunos_tree.item(item, tags=("selecionado",))
 
             # pega os valores corretos
@@ -477,6 +477,7 @@ class CadastroWindow:
         # bindings para reposicionar labels quando necessário
         self.historico_tree.bind("<Configure>", lambda e: self._reposicionar_labels_situacao())
         self.historico_tree.bind("<Motion>", lambda e: self._reposicionar_labels_situacao())
+        
         # mousewheel bindings — atualizam posicao dos labels ao rolar com roda do mouse
         self.historico_tree.bind_all("<MouseWheel>", lambda e: self._reposicionar_labels_situacao())
         self.historico_tree.bind_all("<Button-4>", lambda e: self._reposicionar_labels_situacao())
@@ -679,6 +680,10 @@ class CadastroWindow:
             "• Histórico\n"
             "- Na aba histórico está todos os registros de empréstimos.\n"
             "- Para alterar a situação de um empréstimo, clique na célula.\n"
+            
+            "• Outras Informações\n"
+            "- Não mova a pasta Sistema Biblioteca\n"
+            "- Caso indentificado algum problema ou dúvida, por favor entre em contato com o telefone (54) 9351-3835"
         )
 
         # Inserir texto no widget

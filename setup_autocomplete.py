@@ -46,7 +46,7 @@ def complete_text(self, entry, var):
                 listbox_frame.place_forget()
                 return
 
-            for match in matches[:50]:  # pode ter muitos livros, mas mostramos com scroll
+            for match in matches[:50]:
                 listbox.insert(tk.END, match)
 
             listbox.selection_clear(0, tk.END)

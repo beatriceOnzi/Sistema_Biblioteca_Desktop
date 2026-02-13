@@ -426,7 +426,7 @@ class TurmaWindow:
         emprestimos_salvos = 0
 
         for entry_data in self.entries_segunda_tabela:
-            inseriu = False  # GARANTE que sempre exista
+            inseriu = False
 
             livro_nome = entry_data['livro_var'].get().strip()
             aluno_id = entry_data['aluno_id']
@@ -434,7 +434,7 @@ class TurmaWindow:
             if not livro_nome or livro_nome == "..." or len(livro_nome) < 2:
                 continue
 
-            # 1️⃣ GARANTIR QUE O LIVRO EXISTA
+            # garantir que o livro existe
             livro_id = self.db.get_livro_id(livro_nome)
 
             if not livro_id:
@@ -454,14 +454,14 @@ class TurmaWindow:
                     )
                     continue
 
-            # 2️⃣ VERIFICAR EMPRÉSTIMO DA SEMANA ATUAL
+            # verifica empréstimo da semana atual
             existe_emprestimo = self.db.verificar_emprestimo_existente(
                 aluno_id,
                 semana_atual
             )
 
             if existe_emprestimo:
-                # existe empréstimo → atualizar (edição ou troca)
+                # existe empréstimo → atualizar
                 self.db.atualizar_emprestimo(
                     aluno_id,
                     livro_id,
@@ -480,7 +480,7 @@ class TurmaWindow:
                     semana_atual
                 )
 
-            # 3️⃣ DEVOLUÇÃO REAL (SÓ SE A SEMANA AVANÇOU E INSERIU NOVO)
+            # devolução real (semana avancou e um novo livro foi pego)
             if inseriu and semana_anterior > 0:
                 linhas_afetadas = self.db.atualizar_devolucao_real(
                     aluno_id,
@@ -490,7 +490,7 @@ class TurmaWindow:
                 if linhas_afetadas > 0:
                     emprestimos_salvos += 1
 
-        # 4️⃣ FECHAR JANELA SE ALGO FOI SALVO
+        # fechar janela
             self.window.destroy()
 
 
