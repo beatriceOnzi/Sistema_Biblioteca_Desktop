@@ -1,4 +1,3 @@
-```
 # Sistema Biblioteca
 
 Sistema desktop para gerenciamento de biblioteca escolar, desenvolvido direcionada para a Escola CNEC São Vicente, Caxias do Sul
@@ -24,7 +23,7 @@ Sistema desktop para gerenciamento de biblioteca escolar, desenvolvido direciona
 - Tkinter
 - SQLite
 
-## Como executar
+## Como utilizar
 
 1. Clone ou baixe o projeto.
 
@@ -34,11 +33,9 @@ Sistema desktop para gerenciamento de biblioteca escolar, desenvolvido direciona
 python main.py
 ```
 
-Ou utilize o arquivo:
-
-```
+Ou abra o arquivo:
 Biblioteca.bat
-```
+
 
 ## Estrutura
 
