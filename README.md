@@ -4,11 +4,10 @@
 Sistema desktop para gerenciamento de biblioteca escolar, desenvolvido direcionada para a Escola CNEC São Vicente, Caxias do Sul
 
 ## Página Incial
-<img width="947" height="502" alt="image" src="https://github.com/user-attachments/assets/93e7d744-0f90-4ffb-b9e7-2277b34e5a96" />
+<img width="947" height="502" alt="Captura de tela 2026-06-12 145536" src="https://github.com/user-attachments/assets/1528b32b-e24a-43cb-b173-e76262f02b16" />
 
 ## Página de Empréstimos da Turma
-<img width="951" height="489" alt="image" src="https://github.com/user-attachments/assets/8aedf85e-f2bd-4872-89b6-498087ed1673" />
-
+<img width="951" height="489" alt="Captura de tela 2026-06-12 145705" src="https://github.com/user-attachments/assets/f08543cc-e303-45b2-8c31-096fcaca006d" />
 
 ## Funcionalidades
 
